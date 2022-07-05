@@ -1,0 +1,362 @@
+body,
+html {
+    height: 100%;
+    /* margin: 0; */
+    text-transform: capitalize !important;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.activecolor {
+    background-color: rgb(255, 51, 0) !important;
+}
+
+
+/* nav section  */
+
+a {
+    text-decoration: none !important;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    /* margin-top: 100px; */
+}
+
+.span1 {
+    color: aqua !important;
+    font-size: 25px;
+}
+
+.span2 {
+    color: yellow !important;
+    font-size: 25px;
+}
+
+.bg-darks {
+    transition: 550ms ease-in;
+    background: transparent;
+}
+
+.bg-darks.scrolled {
+    background-color: #feffd3!important;
+}
+
+.link a {
+    color: yellow !important;
+}
+
+.link a:hover {
+    color: rgb(255, 174, 0)!important;
+}
+
+.bg-darks.scrolled .link a {
+    color: rgb(32, 148, 226) !important;
+    transition: 550ms ease-in;
+    /* background-color: #ffffff !important; */
+}
+
+.bg-darks.scrolled .link a:hover {
+    color: violet !important;
+}
+
+a.middle {
+    position: relative;
+}
+
+a.middle:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 136, 0);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.btnnav {
+    background-color: #FFB70A;
+    transition: 1s;
+}
+
+.btnnav:hover {
+    border: 1px solid #FFB70A !important;
+    background-color: transparent;
+    color: #FFB70A;
+}
+
+
+/* navbar section end */
+
+
+/* intro section start */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* intro section end   */
+
+
+/* intro section end */
+
+
+/* welcome section start */
+
+
+/* welcome section end */
+
+
+/* we serve delicious food section start  */
+
+.section3 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bg/bg2.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: top right;
+    /* background-attachment: fixed !important; */
+}
+
+.card-img-wrap {
+    overflow: hidden;
+    position: relative;
+    padding: 0 !important;
+}
+
+.card-img-wrap:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.card-img-wrap img {
+    transition: transform .25s;
+    /* width: 100%; */
+}
+
+.card-img-wrap:hover img {
+    transform: scale(1.2);
+}
+
+.card-img-wrap:hover:after {
+    opacity: 1;
+}
+
+.card {
+    background-color: transparent;
+    transition: 1s;
+}
+
+.card:hover {
+    background-color: rgb(255, 153, 0) !important;
+    /* transition: .25s; */
+}
+
+
+/* we serve delicious food section end  */
+
+
+/* Reservation section start */
+
+.section4 {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bg/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /* background-attachment: fixed !important; */
+}
+
+
+/* Reservation section end */
+
+.rev {
+    font-family: "Playfair Display", serif;
+    font-size: 42px !important;
+    font-weight: 700;
+}
+
+.revtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px !important;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* responsive media queary */
+
+
+/* special deshes section start */
+
+.special {
+    font-family: "Playfair Display", serif;
+    font-size: 42px !important;
+    font-weight: bolder;
+}
+
+.special1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px !important;
+    font-weight: bolder;
+    font-style: italic !important;
+}
+
+
+/* special deshes section end */
+
+
+/* client section start  */
+
+.section6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#demo {
+    /* background: linear-gradient(112deg, #ffffff 50%, antiquewhite 50%); */
+    max-width: 900px;
+    margin: auto
+}
+
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 5rem 8rem;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2rem
+}
+
+.carousel-caption img {
+    width: 6rem;
+    border-radius: 5rem;
+    margin-top: 2rem
+}
+
+
+/* @media(max-width:767px) {} */
+
+#image-caption {
+    font-style: normal;
+    font-size: 1rem;
+    margin-top: 0.5rem
+}
+
+@media(max-width:767px) {
+    #image-caption {
+        font-style: normal;
+        font-size: 0.6rem;
+        margin-top: 0.5rem
+    }
+}
+
+
+/* client section end  */
+
+
+/* footer section start  */
+
+footer {
+    background-color: #131230;
+}
+
+
+/* footer section end  */
+
+
+/* responsive section start  */
+
+@media only screen and (max-width: 767px) {
+    #borderDemo1 {
+        border-right: 0px groove #1C6EA4;
+        border-bottom: 8px groove #1C6EA4;
+    }
+    .bg-darks .link a {
+        background-color: rgb(74, 122, 184) !important;
+    }
+    /* cleant section start  */
+    .carousel-caption {
+        position: initial;
+        z-index: 10;
+        padding: 3rem 2rem;
+        /* color: rgba(78, 77, 77, 0.856); */
+        text-align: center;
+        font-size: 0.7rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 1.5rem
+    }
+    .carousel-caption img {
+        width: 4rem;
+        border-radius: 4rem;
+        margin-top: 1rem
+    }
+    /* cleant section end  */
+}
